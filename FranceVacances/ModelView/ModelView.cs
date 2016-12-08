@@ -22,8 +22,19 @@ namespace FranceVacances.ModelView
         {
             Dictionary<int, List<int>> dates = new Dictionary<int, List<int>>
             {
-                {1, new List<int>{1,2,7} },
-                {2, new List<int> {5,6,7,8,9} }
+                {1, new List<int>() },
+                {2, new List<int>() },
+                {3, new List<int>() },
+                {4, new List<int>() },
+                {5, new List<int>() },
+                {6, new List<int>() },
+                {7, new List<int>() },
+                {8, new List<int>() },
+                {9, new List<int>() },
+                {10, new List<int>() },
+                {11, new List<int>() },
+                {12, new List<int>() },
+
             };
             List<string> address = new List<string>();
             address.Add("Street 1");

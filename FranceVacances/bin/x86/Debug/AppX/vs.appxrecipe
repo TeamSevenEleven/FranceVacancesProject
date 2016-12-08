@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>18c1e873-2931-4d6b-b772-7dbc62f2b71e</PackageIdentityName>
     <PackageIdentityPublisher>CN=Andy</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T09:25:23.288</Modified>
+      <Modified>2016-12-08T10:15:31.838</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\bin\x86\Debug\FranceVacances.exe">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\FranceVacances.exe">
       <PackagePath>entrypoint\FranceVacances.exe</PackagePath>
-      <Modified>2016-12-08T09:25:21.966</Modified>
+      <Modified>2016-12-08T10:15:31.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andy\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,67 +448,67 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\splash.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\splash.png">
       <PackagePath>Assets\splash.png</PackagePath>
-      <Modified>2016-12-05T10:06:47.123</Modified>
+      <Modified>2016-12-08T09:46:09.662</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.661</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.663</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.665</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.665</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-20T15:30:08.000</Modified>
+      <Modified>2016-12-08T09:46:09.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Images\image1.jpg">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Images\image1.jpg">
       <PackagePath>Images\image1.jpg</PackagePath>
-      <Modified>2016-11-22T10:32:38.847</Modified>
+      <Modified>2016-12-08T09:46:10.288</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-11-01T21:34:06.756</Modified>
+      <Modified>2016-12-08T09:46:10.425</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\bin\x86\Debug\FranceVacances.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\FranceVacances.xr.xml">
       <PackagePath>FranceVacances.xr.xml</PackagePath>
-      <Modified>2016-12-06T10:23:55.134</Modified>
+      <Modified>2016-12-08T09:46:10.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-10-11T09:48:10.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T09:25:22.868</Modified>
+      <Modified>2016-12-08T09:51:11.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\documents\visual studio 2015\Projects\FranceVacances\FranceVacances\bin\x86\Debug\Core\FranceVacances.exe">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\Core\FranceVacances.exe">
       <PackagePath>FranceVacances.exe</PackagePath>
-      <Modified>2016-12-08T09:25:23.285</Modified>
+      <Modified>2016-12-08T10:15:31.834</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
