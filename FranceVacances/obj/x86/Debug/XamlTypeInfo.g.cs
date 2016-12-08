@@ -132,49 +132,27 @@ namespace FranceVacances.FranceVacances_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[9];
             _typeNameTable[0] = "FranceVacances.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "FranceVacances.Views.Book";
             _typeNameTable[4] = "FranceVacances.ModelView.ModelView";
             _typeNameTable[5] = "Object";
-            _typeNameTable[6] = "System.Collections.ObjectModel.ObservableCollection`1<FranceVacances.Models.RentalModel>";
-            _typeNameTable[7] = "System.Collections.ObjectModel.Collection`1<FranceVacances.Models.RentalModel>";
-            _typeNameTable[8] = "FranceVacances.Models.RentalModel";
-            _typeNameTable[9] = "Int32";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "Double";
-            _typeNameTable[12] = "System.Collections.Generic.List`1<String>";
-            _typeNameTable[13] = "System.Collections.Generic.Dictionary`2<Int32, System.Collections.Generic.List`1<Int32>>";
-            _typeNameTable[14] = "System.Collections.Generic.List`1<Int32>";
-            _typeNameTable[15] = "Byte";
-            _typeNameTable[16] = "System.ValueType";
-            _typeNameTable[17] = "FranceVacances.Views.Filters";
-            _typeNameTable[18] = "FranceVacances.Views.Home";
-            _typeNameTable[19] = "FranceVacances.Views.RentalDetails";
+            _typeNameTable[6] = "FranceVacances.Views.Filters";
+            _typeNameTable[7] = "FranceVacances.Views.Home";
+            _typeNameTable[8] = "FranceVacances.Views.RentalDetails";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[9];
             _typeTable[0] = typeof(global::FranceVacances.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::FranceVacances.Views.Book);
             _typeTable[4] = typeof(global::FranceVacances.ModelView.ModelView);
             _typeTable[5] = typeof(global::System.Object);
-            _typeTable[6] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::FranceVacances.Models.RentalModel>);
-            _typeTable[7] = typeof(global::System.Collections.ObjectModel.Collection<global::FranceVacances.Models.RentalModel>);
-            _typeTable[8] = typeof(global::FranceVacances.Models.RentalModel);
-            _typeTable[9] = typeof(global::System.Int32);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::System.Double);
-            _typeTable[12] = typeof(global::System.Collections.Generic.List<global::System.String>);
-            _typeTable[13] = typeof(global::System.Collections.Generic.Dictionary<global::System.Int32, global::System.Collections.Generic.List<global::System.Int32>>);
-            _typeTable[14] = typeof(global::System.Collections.Generic.List<global::System.Int32>);
-            _typeTable[15] = typeof(global::System.Byte);
-            _typeTable[16] = typeof(global::System.ValueType);
-            _typeTable[17] = typeof(global::FranceVacances.Views.Filters);
-            _typeTable[18] = typeof(global::FranceVacances.Views.Home);
-            _typeTable[19] = typeof(global::FranceVacances.Views.RentalDetails);
+            _typeTable[6] = typeof(global::FranceVacances.Views.Filters);
+            _typeTable[7] = typeof(global::FranceVacances.Views.Home);
+            _typeTable[8] = typeof(global::FranceVacances.Views.RentalDetails);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -212,46 +190,9 @@ namespace FranceVacances.FranceVacances_XamlTypeInfo
         private object Activate_0_MainPage() { return new global::FranceVacances.MainPage(); }
         private object Activate_3_Book() { return new global::FranceVacances.Views.Book(); }
         private object Activate_4_ModelView() { return new global::FranceVacances.ModelView.ModelView(); }
-        private object Activate_6_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::FranceVacances.Models.RentalModel>(); }
-        private object Activate_7_Collection() { return new global::System.Collections.ObjectModel.Collection<global::FranceVacances.Models.RentalModel>(); }
-        private object Activate_8_RentalModel() { return new global::FranceVacances.Models.RentalModel(); }
-        private object Activate_12_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
-        private object Activate_13_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.Int32, global::System.Collections.Generic.List<global::System.Int32>>(); }
-        private object Activate_14_List() { return new global::System.Collections.Generic.List<global::System.Int32>(); }
-        private object Activate_17_Filters() { return new global::FranceVacances.Views.Filters(); }
-        private object Activate_18_Home() { return new global::FranceVacances.Views.Home(); }
-        private object Activate_19_RentalDetails() { return new global::FranceVacances.Views.RentalDetails(); }
-        private void VectorAdd_6_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::FranceVacances.Models.RentalModel>)instance;
-            var newItem = (global::FranceVacances.Models.RentalModel)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_7_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::FranceVacances.Models.RentalModel>)instance;
-            var newItem = (global::FranceVacances.Models.RentalModel)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_12_List(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
-            var newItem = (global::System.String)item;
-            collection.Add(newItem);
-        }
-        private void MapAdd_13_Dictionary(object instance, object key, object item)
-        {
-            var collection = (global::System.Collections.Generic.IDictionary<global::System.Int32, global::System.Collections.Generic.List<global::System.Int32>>)instance;
-            var newKey = (global::System.Int32)key;
-            var newItem = (global::System.Collections.Generic.List<global::System.Int32>)item;
-            collection.Add(newKey, newItem);
-        }
-        private void VectorAdd_14_List(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
-            var newItem = (global::System.Int32)item;
-            collection.Add(newItem);
-        }
+        private object Activate_6_Filters() { return new global::FranceVacances.Views.Filters(); }
+        private object Activate_7_Home() { return new global::FranceVacances.Views.Home(); }
+        private object Activate_8_RentalDetails() { return new global::FranceVacances.Views.RentalDetails(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -288,7 +229,6 @@ namespace FranceVacances.FranceVacances_XamlTypeInfo
             case 4:   //  FranceVacances.ModelView.ModelView
                 userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_4_ModelView;
-                userType.AddMemberName("Rentals");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -297,102 +237,23 @@ namespace FranceVacances.FranceVacances_XamlTypeInfo
                 xamlType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  System.Collections.ObjectModel.ObservableCollection`1<FranceVacances.Models.RentalModel>
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<FranceVacances.Models.RentalModel>"));
-                userType.CollectionAdd = VectorAdd_6_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 7:   //  System.Collections.ObjectModel.Collection`1<FranceVacances.Models.RentalModel>
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_7_Collection;
-                userType.CollectionAdd = VectorAdd_7_Collection;
-                xamlType = userType;
-                break;
-
-            case 8:   //  FranceVacances.Models.RentalModel
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_RentalModel;
-                userType.AddMemberName("id");
-                userType.AddMemberName("Name");
-                userType.AddMemberName("Country");
-                userType.AddMemberName("Price");
-                userType.AddMemberName("Bookings");
-                userType.AddMemberName("Address");
-                userType.AddMemberName("BookedDays");
-                userType.AddMemberName("Season");
-                userType.AddMemberName("Rooms");
-                userType.AddMemberName("Description");
-                userType.AddMemberName("ImagePath");
-                userType.AddMemberName("ThumbnailPath");
+            case 6:   //  FranceVacances.Views.Filters
+                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Filters;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Int32
-                xamlType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  String
-                xamlType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  Double
-                xamlType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  System.Collections.Generic.List`1<String>
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_12_List;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 13:   //  System.Collections.Generic.Dictionary`2<Int32, System.Collections.Generic.List`1<Int32>>
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_13_Dictionary;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 14:   //  System.Collections.Generic.List`1<Int32>
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_List;
-                userType.CollectionAdd = VectorAdd_14_List;
-                userType.AddMemberName("Capacity");
-                userType.AddMemberName("Count");
-                xamlType = userType;
-                break;
-
-            case 15:   //  Byte
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 16:   //  System.ValueType
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 17:   //  FranceVacances.Views.Filters
+            case 7:   //  FranceVacances.Views.Home
                 userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_Filters;
+                userType.Activator = Activate_7_Home;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  FranceVacances.Views.Home
+            case 8:   //  FranceVacances.Views.RentalDetails
                 userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_Home;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 19:   //  FranceVacances.Views.RentalDetails
-                userType = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_RentalDetails;
+                userType.Activator = Activate_8_RentalDetails;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -401,250 +262,11 @@ namespace FranceVacances.FranceVacances_XamlTypeInfo
         }
 
 
-        private object get_0_ModelView_Rentals(object instance)
-        {
-            var that = (global::FranceVacances.ModelView.ModelView)instance;
-            return that.Rentals;
-        }
-        private void set_0_ModelView_Rentals(object instance, object Value)
-        {
-            var that = (global::FranceVacances.ModelView.ModelView)instance;
-            that.Rentals = (global::System.Collections.ObjectModel.ObservableCollection<global::FranceVacances.Models.RentalModel>)Value;
-        }
-        private object get_1_RentalModel_id(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.id;
-        }
-        private void set_1_RentalModel_id(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.id = (global::System.Int32)Value;
-        }
-        private object get_2_RentalModel_Name(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Name;
-        }
-        private void set_2_RentalModel_Name(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Name = (global::System.String)Value;
-        }
-        private object get_3_RentalModel_Country(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Country;
-        }
-        private void set_3_RentalModel_Country(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Country = (global::System.String)Value;
-        }
-        private object get_4_RentalModel_Price(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Price;
-        }
-        private void set_4_RentalModel_Price(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Price = (global::System.Double)Value;
-        }
-        private object get_5_RentalModel_Bookings(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Bookings;
-        }
-        private void set_5_RentalModel_Bookings(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Bookings = (global::System.Int32)Value;
-        }
-        private object get_6_RentalModel_Address(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Address;
-        }
-        private void set_6_RentalModel_Address(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Address = (global::System.Collections.Generic.List<global::System.String>)Value;
-        }
-        private object get_7_RentalModel_BookedDays(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.BookedDays;
-        }
-        private void set_7_RentalModel_BookedDays(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.BookedDays = (global::System.Collections.Generic.Dictionary<global::System.Int32, global::System.Collections.Generic.List<global::System.Int32>>)Value;
-        }
-        private object get_8_List_Capacity(object instance)
-        {
-            var that = (global::System.Collections.Generic.List<global::System.Int32>)instance;
-            return that.Capacity;
-        }
-        private void set_8_List_Capacity(object instance, object Value)
-        {
-            var that = (global::System.Collections.Generic.List<global::System.Int32>)instance;
-            that.Capacity = (global::System.Int32)Value;
-        }
-        private object get_9_List_Count(object instance)
-        {
-            var that = (global::System.Collections.Generic.List<global::System.Int32>)instance;
-            return that.Count;
-        }
-        private object get_10_RentalModel_Season(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Season;
-        }
-        private void set_10_RentalModel_Season(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Season = (global::System.String)Value;
-        }
-        private object get_11_RentalModel_Rooms(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Rooms;
-        }
-        private void set_11_RentalModel_Rooms(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Rooms = (global::System.Byte)Value;
-        }
-        private object get_12_RentalModel_Description(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.Description;
-        }
-        private void set_12_RentalModel_Description(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.Description = (global::System.String)Value;
-        }
-        private object get_13_RentalModel_ImagePath(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.ImagePath;
-        }
-        private void set_13_RentalModel_ImagePath(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.ImagePath = (global::System.String)Value;
-        }
-        private object get_14_RentalModel_ThumbnailPath(object instance)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            return that.ThumbnailPath;
-        }
-        private void set_14_RentalModel_ThumbnailPath(object instance, object Value)
-        {
-            var that = (global::FranceVacances.Models.RentalModel)instance;
-            that.ThumbnailPath = (global::System.String)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember xamlMember = null;
-            global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "FranceVacances.ModelView.ModelView.Rentals":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.ModelView.ModelView");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Rentals", "System.Collections.ObjectModel.ObservableCollection`1<FranceVacances.Models.RentalModel>");
-                xamlMember.Getter = get_0_ModelView_Rentals;
-                xamlMember.Setter = set_0_ModelView_Rentals;
-                break;
-            case "FranceVacances.Models.RentalModel.id":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "id", "Int32");
-                xamlMember.Getter = get_1_RentalModel_id;
-                xamlMember.Setter = set_1_RentalModel_id;
-                break;
-            case "FranceVacances.Models.RentalModel.Name":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_2_RentalModel_Name;
-                xamlMember.Setter = set_2_RentalModel_Name;
-                break;
-            case "FranceVacances.Models.RentalModel.Country":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Country", "String");
-                xamlMember.Getter = get_3_RentalModel_Country;
-                xamlMember.Setter = set_3_RentalModel_Country;
-                break;
-            case "FranceVacances.Models.RentalModel.Price":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Price", "Double");
-                xamlMember.Getter = get_4_RentalModel_Price;
-                xamlMember.Setter = set_4_RentalModel_Price;
-                break;
-            case "FranceVacances.Models.RentalModel.Bookings":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Bookings", "Int32");
-                xamlMember.Getter = get_5_RentalModel_Bookings;
-                xamlMember.Setter = set_5_RentalModel_Bookings;
-                break;
-            case "FranceVacances.Models.RentalModel.Address":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Address", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_6_RentalModel_Address;
-                xamlMember.Setter = set_6_RentalModel_Address;
-                break;
-            case "FranceVacances.Models.RentalModel.BookedDays":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "BookedDays", "System.Collections.Generic.Dictionary`2<Int32, System.Collections.Generic.List`1<Int32>>");
-                xamlMember.Getter = get_7_RentalModel_BookedDays;
-                xamlMember.Setter = set_7_RentalModel_BookedDays;
-                break;
-            case "System.Collections.Generic.List`1<Int32>.Capacity":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Collections.Generic.List`1<Int32>");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Capacity", "Int32");
-                xamlMember.Getter = get_8_List_Capacity;
-                xamlMember.Setter = set_8_List_Capacity;
-                break;
-            case "System.Collections.Generic.List`1<Int32>.Count":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Collections.Generic.List`1<Int32>");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Count", "Int32");
-                xamlMember.Getter = get_9_List_Count;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "FranceVacances.Models.RentalModel.Season":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Season", "String");
-                xamlMember.Getter = get_10_RentalModel_Season;
-                xamlMember.Setter = set_10_RentalModel_Season;
-                break;
-            case "FranceVacances.Models.RentalModel.Rooms":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Rooms", "Byte");
-                xamlMember.Getter = get_11_RentalModel_Rooms;
-                xamlMember.Setter = set_11_RentalModel_Rooms;
-                break;
-            case "FranceVacances.Models.RentalModel.Description":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_12_RentalModel_Description;
-                xamlMember.Setter = set_12_RentalModel_Description;
-                break;
-            case "FranceVacances.Models.RentalModel.ImagePath":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "ImagePath", "String");
-                xamlMember.Getter = get_13_RentalModel_ImagePath;
-                xamlMember.Setter = set_13_RentalModel_ImagePath;
-                break;
-            case "FranceVacances.Models.RentalModel.ThumbnailPath":
-                userType = (global::FranceVacances.FranceVacances_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FranceVacances.Models.RentalModel");
-                xamlMember = new global::FranceVacances.FranceVacances_XamlTypeInfo.XamlMember(this, "ThumbnailPath", "String");
-                xamlMember.Getter = get_14_RentalModel_ThumbnailPath;
-                xamlMember.Setter = set_14_RentalModel_ThumbnailPath;
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

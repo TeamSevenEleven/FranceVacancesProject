@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="Teal">
-    <CalendarView Margin="156,175,0,213"
+    <CalendarView x:ConnectionId='1' Margin="156,175,0,213"
                   x:Name="Calendar"
-                  CalendarViewDayItemChanging="Calendar_CalendarViewDayItemChanging"
+                                                                                    
                   SelectionMode="Multiple"/>
-    <TextBlock x:Name="title"
+    <TextBlock x:ConnectionId='2' x:Name="title"
                HorizontalAlignment="Left"
                TextWrapping="Wrap"
                Text="TextBlock"
@@ -22,8 +22,8 @@
                Height="165"
                FontSize="64"
                Foreground="#FFFFD68B"/>
-    <Button x:Name="checkout"
-            Click="checkout_Click"
+    <Button x:ConnectionId='3' x:Name="checkout"
+                                  
             Content="Button"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
@@ -31,3 +31,4 @@
 
   </Grid>
 </Page>
+

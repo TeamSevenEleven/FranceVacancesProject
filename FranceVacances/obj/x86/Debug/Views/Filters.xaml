@@ -1,20 +1,20 @@
-﻿<Page x:Class="FranceVacances.Views.Home"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:local="using:FranceVacances.Views"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d"
-      xmlns:mv="using:FranceVacances.ModelView">
-
+﻿<Page
+    x:Class="FranceVacances.Views.Filters"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FranceVacances.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:mv="using:FranceVacances.ModelView">
+  <Page.DataContext>
+    <mv:ModelView />
+  </Page.DataContext>
   <Grid Background="Teal">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="721*" />
-    </Grid.RowDefinitions>
-
-    <GridView ItemsSource="{Binding Rentals}"
+    <GridView x:ConnectionId='1'  x:Name="view"
               IsItemClickEnabled="True"
-              ItemClick="GridView_ItemClick">
+                                            
+               ItemsSource="{Binding Rentals}">
       <GridView.ItemTemplate>
         <DataTemplate>
           <StackPanel Margin="20"
@@ -30,7 +30,7 @@
             <TextBlock Text="{Binding Country}"
                        TextAlignment="Center"
                        TextWrapping="NoWrap" />
-            
+
             <TextBlock TextAlignment="Center"
                        TextWrapping="NoWrap">
               <Run Text="Season: " />
@@ -77,6 +77,16 @@
       </GridView.GroupStyle>
 
     </GridView>
-
+    <TextBlock x:ConnectionId='2' x:Name="message"
+               HorizontalAlignment="Left"
+               TextWrapping="Wrap"
+               VerticalAlignment="Top"
+               Margin="213,314,0,0"
+               Height="124"
+               Width="779"
+               FontSize="50px"
+               TextAlignment="Center"
+               Foreground="White"/>
   </Grid>
 </Page>
+

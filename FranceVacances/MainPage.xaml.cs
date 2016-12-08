@@ -130,9 +130,7 @@ namespace FranceVacances
             {
                 //Set the ItemsSource to be your filtered dataset
                 //sender.ItemsSource = dataset;
-                var modelViewInstance = new ModelView.ModelView();
-                var RentalList = modelViewInstance.Rentals;
-                var listItems = from rent in RentalList
+                var listItems = from rent in ModelView.ModelView.Rentals
                                 where rent.Season.ToUpper().Contains(sender.Text.ToString().ToUpper()) ||
                                        rent.Name.ToUpper().Contains(sender.Text.ToString().ToUpper()) ||
                                        rent.Country.ToUpper().Contains(sender.Text.ToString().ToUpper()) ||

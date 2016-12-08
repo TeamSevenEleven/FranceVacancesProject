@@ -36,18 +36,16 @@ namespace FranceVacances.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var RentalList = new ModelView.ModelView();
-            var a = RentalList.Rentals;
             if(e.Parameter.ToString().ToUpper() == "SUMMER" || e.Parameter.ToString().ToUpper() == "WINTER")
             {
-                var listItems = from rental in a
+                var listItems = from rental in ModelView.ModelView.Rentals
                                 where rental.Season.ToUpper() == e.Parameter.ToString().ToUpper()
                                 select rental;
                 view.ItemsSource = listItems.ToList();
 
             } else
             {
-                var listItems = from rental in a
+                var listItems = from rental in ModelView.ModelView.Rentals
                                 where rental.Country.ToUpper() == e.Parameter.ToString().ToUpper()
                                 select rental;
                 view.ItemsSource = listItems.ToList();

@@ -49,14 +49,9 @@ namespace FranceVacances.Views
                 }
             }
 
-            ModelView.ModelView a = new ModelView.ModelView();
+            
 
-            foreach (var date in Calendar.SelectedDates)
-            {
-                List<int> daylist = new List<int>();
-                daylist.Add(date.Day);
-                a.Rentals[SentRental.id - 1].BookedDays[date.Month] = daylist;
-            }
+           
 
         }
 
@@ -66,6 +61,16 @@ namespace FranceVacances.Views
             SentRental = sentRental;
             title.Text = sentRental.Name;
 
+        }
+
+        private void checkout_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var date in Calendar.SelectedDates)
+            {
+                List<int> daylist = new List<int>();
+                daylist.Add(date.Day);
+                ModelView.ModelView.Rentals[SentRental.id - 1].BookedDays[date.Month] = daylist;
+            }
         }
     }
 }

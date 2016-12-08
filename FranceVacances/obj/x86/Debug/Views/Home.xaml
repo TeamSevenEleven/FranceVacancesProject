@@ -12,9 +12,9 @@
       <RowDefinition Height="721*" />
     </Grid.RowDefinitions>
 
-    <GridView ItemsSource="{Binding Rentals}"
+    <GridView x:ConnectionId='1' ItemsSource="{Binding Rentals}"
               IsItemClickEnabled="True"
-              ItemClick="GridView_ItemClick">
+                                            >
       <GridView.ItemTemplate>
         <DataTemplate>
           <StackPanel Margin="20"
@@ -80,3 +80,4 @@
 
   </Grid>
 </Page>
+
