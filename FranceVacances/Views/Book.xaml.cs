@@ -65,9 +65,10 @@ namespace FranceVacances.Views
 
         private void checkout_Click(object sender, RoutedEventArgs e)
         {
+            List<int> daylist = new List<int>();
             foreach (var date in Calendar.SelectedDates)
             {
-                List<int> daylist = new List<int>();
+                
                 daylist.Add(date.Day);
                 ModelView.ModelView.Rentals[SentRental.id - 1].BookedDays[date.Month] = daylist;
             }
