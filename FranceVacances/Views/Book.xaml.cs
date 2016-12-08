@@ -64,6 +64,8 @@ namespace FranceVacances.Views
             {
                 ModelView.ModelView.Rentals[SentRental.id - 1].BookedDays[date.Month].Add(date.Day);
             }
+
+            Frame.Navigate(typeof(Home), null);
         }
     }
 }

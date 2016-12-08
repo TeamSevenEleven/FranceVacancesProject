@@ -40,7 +40,12 @@ namespace FranceVacances.Views
             rentalObject = clickedRental;
             Country.Text = clickedRental.Country;
             Name.Text = clickedRental.Name;
-            Season.Text = clickedRental.Season; 
+            Season.Text = clickedRental.Season;
+            Street.Text = clickedRental.Address[0];
+            City.Text = clickedRental.Address[1];
+            Zip.Text = clickedRental.Address[2];
+            AddressCountry.Text = clickedRental.Address[3];
+
 
 
             BitmapImage img = new BitmapImage();

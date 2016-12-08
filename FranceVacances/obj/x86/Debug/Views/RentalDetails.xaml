@@ -41,7 +41,7 @@
       <RichTextBlock Height="200"
                      Padding="15,20,20,0">
         <Paragraph>
-          <Run x:ConnectionId='8'  x:Name="Description"
+          <Run x:ConnectionId='11'  x:Name="Description"
                 Text="   ASdddd"
                 Foreground="White" />
         </Paragraph>
@@ -53,15 +53,19 @@
             <Run Text="Address" />
           </Paragraph>
           <Paragraph>
-            <Run x:ConnectionId='7' x:Name="Street"
+            <Run x:ConnectionId='10' x:Name="Street"
                  Text="Streeteeeeeee 54"
                  />
           </Paragraph>
           <Paragraph>
-            <Run Text="City asdasdasd" />
+            <Run x:ConnectionId='9' x:Name="City" Text="City asdasdasd" />
           </Paragraph>
           <Paragraph>
-            <Run Text="Zip stuff" />
+            <Run x:ConnectionId='8' x:Name="Zip" Text="Zip stuff" />
+          </Paragraph>
+          <Paragraph>
+            <Run x:ConnectionId='7' x:Name="AddressCountry"
+                 Text="Zip stuff" />
           </Paragraph>
         </RichTextBlock>
         <StackPanel>

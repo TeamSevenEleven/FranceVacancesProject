@@ -58,10 +58,14 @@
                  />
           </Paragraph>
           <Paragraph>
-            <Run Text="City asdasdasd" />
+            <Run x:Name="City" Text="City asdasdasd" />
           </Paragraph>
           <Paragraph>
-            <Run Text="Zip stuff" />
+            <Run x:Name="Zip" Text="Zip stuff" />
+          </Paragraph>
+          <Paragraph>
+            <Run x:Name="AddressCountry"
+                 Text="Zip stuff" />
           </Paragraph>
         </RichTextBlock>
         <StackPanel>
