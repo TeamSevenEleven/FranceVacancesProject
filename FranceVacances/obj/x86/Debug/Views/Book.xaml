@@ -27,7 +27,21 @@
             Content="Checkout"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Margin="542,485,0,0" />
+            Margin="809,405,0,0"
+            Height="81"
+            Width="250"
+            FontSize="40"
+            Foreground="#FFFFD68B" />
+    <TextBlock x:ConnectionId='4' x:Name="textBlock"
+               HorizontalAlignment="Left"
+               TextWrapping="Wrap"
+               Text="Select your dates"
+               VerticalAlignment="Top"
+               Margin="156,89,0,0"
+               Height="56"
+               Width="296"
+               FontSize="30"
+               Foreground="#FFFFD68B" />
 
   </Grid>
 </Page>

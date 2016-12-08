@@ -128,6 +128,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
@@ -181,6 +183,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="CacheSize" />
       <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">

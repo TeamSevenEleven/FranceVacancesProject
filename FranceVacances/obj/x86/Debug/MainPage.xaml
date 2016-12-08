@@ -370,7 +370,8 @@
     <Frame x:ConnectionId='16' Grid.Row="1"
            x:Name="EmbeddedFrame"
            x:FieldModifier="public"
-                                                        >
+                                                        
+           CacheSize="5">
     </Frame>
   </Grid>
 </Page>

@@ -47,12 +47,7 @@ namespace FranceVacances.Views
                         args.Item.Background = new SolidColorBrush(Color.FromArgb(100, 255, 0, 0));
                     }
                 }
-            }
-
-            
-
-           
-
+            }           
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
