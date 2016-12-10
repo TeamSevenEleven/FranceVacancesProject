@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="18c1e873-2931-4d6b-b772-7dbc62f2b71e" Publisher="CN=Andy" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="18c1e873-2931-4d6b-b772-7dbc62f2b71s" Publisher="CN=Team Seven Eleven" Version="1.0.1.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="18c1e873-2931-4d6b-b772-7dbc62f2b71e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>FranceVacances</DisplayName>
-    <PublisherDisplayName>Andy</PublisherDisplayName>
+    <PublisherDisplayName>Team SevenEleven</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -38,7 +38,7 @@
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25425.1" />
     <build:Item Name="ProjectGUID" Value="{A07AAFD6-CC17-48E5-8524-6C1A2687533E}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />

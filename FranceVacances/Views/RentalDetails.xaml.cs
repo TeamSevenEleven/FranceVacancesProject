@@ -29,7 +29,6 @@ namespace FranceVacances.Views
         {
             this.InitializeComponent();
 
-
         }
 
          RentalModel rentalObject {get;set;}
@@ -46,17 +45,33 @@ namespace FranceVacances.Views
             Zip.Text = clickedRental.Address[2];
             AddressCountry.Text = clickedRental.Address[3];
 
+            
+
+            foreach (string value in clickedRental.ImagePaths)
+            {
+                BitmapImage temp = new BitmapImage(new Uri(value));
+                Image tempimg = new Image();
+                tempimg.Source = temp;
+
+                gallery.Items.Add(tempimg);
+            }
 
 
-            BitmapImage img = new BitmapImage();
-            img.UriSource = new Uri(clickedRental.ImagePath);
-            Image.Source = img;
+            
+//            gallery.SelectionChanged += FlipView_SelectionChanged;
+ //           img.UriSource = new Uri(clickedRental.ImagePath);
+ //           Image.Source = img;
 
 
             Price.Text = clickedRental.Price.ToString() + "$";
             Street.Text = clickedRental.Address[0];
             Description.Text = clickedRental.Description;
 
+        }
+
+        private void FlipView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

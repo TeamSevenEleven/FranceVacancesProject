@@ -3,4 +3,5 @@ MainPage.xbf
 Views\Book.xbf
 Views\Filters.xbf
 Views\Home.xbf
+Views\LoginView.xbf
 Views\RentalDetails.xbf

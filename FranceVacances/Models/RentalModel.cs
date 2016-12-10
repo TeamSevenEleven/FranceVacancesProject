@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace FranceVacances.Models
 {
-    class RentalModel
+    public class RentalModel
     {
         public RentalModel()
         {
 
         }
 
-        public RentalModel(int _id, string _name, string _country, double _price, int _bookings, List<string> _address, Dictionary<int,List<int>> _BookedDays, string _season, byte _rooms, string _description, List<string> _tags,  string _imagepath, string _thumbnailpath)
+        public RentalModel(int _id, string _name, string _country, double _price, int _bookings, List<string> _address, Dictionary<int,List<int>> _BookedDays, string _season, byte _rooms, string _description, List<string> _tags,  List<string> _imagepaths, string _thumbnailpath)
 
         {
             id = _id;
@@ -27,8 +27,9 @@ namespace FranceVacances.Models
             Rooms = _rooms;
             Description = _description;
             Tags = _tags;
-            ImagePath = _imagepath;
-            ThumbnailPath = _thumbnailpath;
+            ImagePaths = _imagepaths;
+            //            ThumbnailPath = _thumbnailpath;
+            ThumbnailPath = _imagepaths[0];
 
         }
         
@@ -44,9 +45,9 @@ namespace FranceVacances.Models
         public string Season { get; set; }
         public byte Rooms { get; set; }
         public string Description { get; set; }
-        List<string> Tags { get; set; }
+        public List<string> Tags { get; set; }
 
-        public string ImagePath { get; set; }
+        public List<string> ImagePaths { get; set; }
         public string ThumbnailPath { get; set; }
 
 
