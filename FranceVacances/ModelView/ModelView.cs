@@ -7,6 +7,9 @@ using FranceVacances.Models;
 using System.Collections.ObjectModel;
 using FranceVacances.Views;
 using FranceVacances.Persistency;
+using Windows.Storage;
+using System.IO;
+
 namespace FranceVacances.ModelView
 {
     
@@ -39,8 +42,34 @@ namespace FranceVacances.ModelView
 
         public ModelView()
         {
+            bool isfile = File.Exists(ApplicationData.Current.LocalFolder.Path + @"/offers.json");
+            if (isfile==true)
+                LoadToObject();
+            else
+            {
+                PopulateWithData();
+                SaveObject();
+            }
+                
+        }
 
+        public bool isFilePresent()
+        {
 
+            return false;
+        }
+        public async Task SaveObject()
+        {
+            Save save = new Save();
+            await save.Serialize(Rentals);
+        }
+        public async Task LoadToObject()
+        {
+            Save load = new Save();
+            Rentals = await load.Deserialize();
+        }
+        public void PopulateWithData()
+        {
             List<string> address = new List<string>();
             address.Add("Street 1");
             address.Add("4444");
@@ -207,14 +236,6 @@ namespace FranceVacances.ModelView
 
             }, "winter", 3, "Something jjj", null, new List<string>() { "http://www.w3schools.com/css/trolltunga.jpg" }, null));
 
-            SaveObject();
-
-        }
-
-        public async Task SaveObject()
-        {
-            Save save = new Save();
-            await save.Serialize(Rentals);
         }
         
         

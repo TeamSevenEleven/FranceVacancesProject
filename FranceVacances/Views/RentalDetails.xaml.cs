@@ -55,7 +55,8 @@ namespace FranceVacances.Views
 
                 gallery.Items.Add(tempimg);
             }
-
+            gallery.Width = stack_flip.Width;
+            gallery.Height = stack_flip.Height;
 
             
 //            gallery.SelectionChanged += FlipView_SelectionChanged;

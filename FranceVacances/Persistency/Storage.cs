@@ -22,18 +22,18 @@ namespace FranceVacances.Persistency
             string content = string.Empty;
             var serializer = new JsonSerializer();
             content = JsonConvert.SerializeObject(instance, Formatting.Indented);
-            StorageFile file = await ApplicationData.Current.LocalFolder.CreateFileAsync("offers.xml", CreationCollisionOption.ReplaceExisting);
+            StorageFile file = await ApplicationData.Current.LocalFolder.CreateFileAsync("offers.json", CreationCollisionOption.ReplaceExisting);
             await FileIO.WriteTextAsync(file, content);
 
             return content.Length / 1024;
         }
 
-        public async Task<RentalModel> Deserialize()
+        public async Task<ObservableCollection<RentalModel>> Deserialize()
         {
-            StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync("offers.xml");
+            StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync("offers.json");
             string content = await FileIO.ReadTextAsync(file);
 
-            return JsonConvert.DeserializeObject<RentalModel>(content);
+            return JsonConvert.DeserializeObject<ObservableCollection<RentalModel>>(content);
         }
 
     }
