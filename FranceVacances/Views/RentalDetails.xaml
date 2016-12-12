@@ -90,8 +90,8 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Name="stack_flip" Grid.Column="0" Margin="20,128,10,162">
-            <FlipView x:Name="gallery" HorizontalAlignment="Center"  SelectionChanged="FlipView_SelectionChanged"  Width="100" Height="100" VerticalAlignment="Top" Margin="10,0"/>
-        </StackPanel>
+
+        <FlipView x:Name="gallery" HorizontalContentAlignment="Center"  SelectionChanged="FlipView_SelectionChanged"   Margin="47,40,10,40"/>
+
     </Grid>
 </Page>

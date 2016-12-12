@@ -106,7 +106,6 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension">
       <RootProperty Name="ResourceKey" />
@@ -262,10 +261,7 @@
     </RootType>
     <RootType FullName="FranceVacances.LoginView" />
     <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Margin" />
       <RootEvent Name="SelectionChanged" />
     </RootType>

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>47FD8CF78A90EA1B82B90717E440A55B09FF25FAAE799A1846EE52B73C0C5A6C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>4B4C6D41D01DF8AA0FEC6CD957A11233C27834C5FF343F1044C109557F11E701</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>18c1e873-2931-4d6b-b772-7dbc62f2b71s_1.0.1.0_x86__9gstzxxtvsjv2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>18c1e873-2931-4d6b-b772-7dbc62f2b71s_9gstzxxtvsjv2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>18c1e873-2931-4d6b-b772-7dbc62f2b71s</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\adi97\Source\Repos\F\FranceVacancesProject\FranceVacances\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-10T09:17:40.481</Modified>
+      <Modified>2016-12-12T10:08:52.055</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\adi97\Source\Repos\F\FranceVacancesProject\FranceVacances\bin\x86\Debug\FranceVacances.exe">
       <PackagePath>entrypoint\FranceVacances.exe</PackagePath>
-      <Modified>2016-12-10T09:17:38.764</Modified>
+      <Modified>2016-12-12T10:08:51.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adi97\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -499,7 +499,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adi97\Source\Repos\F\FranceVacancesProject\FranceVacances\bin\x86\Debug\FranceVacances.xr.xml">
       <PackagePath>FranceVacances.xr.xml</PackagePath>
-      <Modified>2016-12-10T08:46:14.386</Modified>
+      <Modified>2016-12-12T10:08:51.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -507,11 +507,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adi97\Source\Repos\F\FranceVacancesProject\FranceVacances\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-10T08:47:16.354</Modified>
+      <Modified>2016-12-12T10:08:51.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adi97\Source\Repos\F\FranceVacancesProject\FranceVacances\bin\x86\Debug\Core\FranceVacances.exe">
       <PackagePath>FranceVacances.exe</PackagePath>
-      <Modified>2016-12-10T09:17:40.477</Modified>
+      <Modified>2016-12-12T10:08:52.051</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
