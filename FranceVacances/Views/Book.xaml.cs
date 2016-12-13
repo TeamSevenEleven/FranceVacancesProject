@@ -55,6 +55,7 @@ namespace FranceVacances.Views
             RentalModel sentRental = e.Parameter as RentalModel;
             SentRental = sentRental;
             title.Text = sentRental.Name;
+            price.Text = sentRental.Price.ToString();
 
         }
 
@@ -66,6 +67,16 @@ namespace FranceVacances.Views
             }
 
             Frame.Navigate(typeof(Home), null);
+        }
+
+        private void Calendar_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
+        {
+            total.Text = "Total price: " + (sender.SelectedDates.Count * SentRental.Price) + "$";
+        }
+
+        private void cearbutton_Click(object sender, RoutedEventArgs e)
+        {
+            Calendar.SelectedDates.Clear();
         }
     }
 }
