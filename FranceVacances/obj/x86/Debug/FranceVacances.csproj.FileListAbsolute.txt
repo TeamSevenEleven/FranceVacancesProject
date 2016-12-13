@@ -422,3 +422,9 @@ C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\q
 C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\Views\LoginView.xbf
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\Views\LoginView.g.i.cs
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\Views\LoginView.g.cs
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\Views\LoginView.xaml
+C:\Users\Andy\Source\Reposs\FranceVacancesProject\FranceVacances\obj\x86\Debug\Views\LoginView.xbf
