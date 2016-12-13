@@ -55,7 +55,7 @@ namespace FranceVacances.Views
             RentalModel sentRental = e.Parameter as RentalModel;
             SentRental = sentRental;
             title.Text = sentRental.Name;
-            price.Text = "Price per night: " + sentRental.Price.ToString();
+            price.Text = "Price per night: " + sentRental.Price.ToString(); 
 
         }
 
