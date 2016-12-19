@@ -21,25 +21,6 @@ namespace FranceVacances.ModelView
             get { return _rentals; }
             set { _rentals = value; }
         }
-
-
-        //Dictionary<int, List<int>> dates = new Dictionary<int, List<int>>
-        //    {
-        //        {1, new List<int>() },
-        //        {2, new List<int>() },
-        //        {3, new List<int>() },
-        //        {4, new List<int>() },
-        //        {5, new List<int>() },
-        //        {6, new List<int>() },
-        //        {7, new List<int>() },
-        //        {8, new List<int>() },
-        //        {9, new List<int>() },
-        //        {10, new List<int>() },
-        //        {11, new List<int>() },
-        //        {12, new List<int>() },
-
-        //    };
-
         public ModelView()
         {
             bool isfile = File.Exists(ApplicationData.Current.LocalFolder.Path + @"/offers.json");
@@ -53,20 +34,15 @@ namespace FranceVacances.ModelView
                 
         }
 
-        public bool isFilePresent()
-        {
-
-            return false;
-        }
         public async Task SaveObject()
         {
-            Save save = new Save();
-            await save.Serialize(Rentals);
+            SaveRentals save = new SaveRentals();
+            await save.SerializeRentals(Rentals);
         }
         public async Task LoadToObject()
         {
-            Save load = new Save();
-            Rentals = await load.Deserialize();
+            SaveRentals load = new SaveRentals();
+            Rentals = await load.DeserializeRentals();
         }
         public void PopulateWithData()
         {

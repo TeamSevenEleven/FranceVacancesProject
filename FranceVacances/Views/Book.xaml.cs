@@ -29,6 +29,7 @@ namespace FranceVacances.Views
         public Book()
         {
             this.InitializeComponent();
+            this.DataContext = new ModelView.ModelView();
             Calendar.MinDate = DateTime.Now;
             Calendar.MaxDate = Calendar.MinDate.AddMonths(6);
 
@@ -55,18 +56,44 @@ namespace FranceVacances.Views
             RentalModel sentRental = e.Parameter as RentalModel;
             SentRental = sentRental;
             title.Text = sentRental.Name;
-            price.Text = "Price per night: " + sentRental.Price.ToString(); 
+            price.Text = sentRental.Price.ToString();
+
 
         }
 
         private void checkout_Click(object sender, RoutedEventArgs e)
         {
+            BookingModel bookedOffer;
+            bookedOffer = new BookingModel();
+            bookedOffer.Id = SentRental.id;
+            
             foreach (var date in Calendar.SelectedDates)
             {
                 ModelView.ModelView.Rentals[SentRental.id - 1].BookedDays[date.Month].Add(date.Day);
+    //            bookedOffer.BookedDays = 
             }
 
             Frame.Navigate(typeof(Home), null);
+        }
+
+        private void bookDaysButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+        }
+
+        private void toggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Calendar.Visibility == Visibility.Visible)
+                Calendar.Visibility = Visibility.Collapsed;
+            else
+                Calendar.Visibility = Visibility.Visible;
+           
+        }
+
+        private void clearbutton_Click(object sender, RoutedEventArgs e)
+        {
+            Calendar.SelectedDates.Clear();
         }
 
         private void Calendar_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
@@ -74,9 +101,26 @@ namespace FranceVacances.Views
             total.Text = "Total price: " + (sender.SelectedDates.Count * SentRental.Price) + "$";
         }
 
-        private void cearbutton_Click(object sender, RoutedEventArgs e)
+        private void toggleSwitch_Toggled(object sender, RoutedEventArgs e)
         {
-            Calendar.SelectedDates.Clear();
+            if (toggleSwitch.IsOn == true)
+            {
+                user.Visibility = Visibility.Collapsed;
+                pass.Visibility = Visibility.Collapsed;
+                email.Visibility = Visibility.Collapsed;
+                phone.Visibility = Visibility.Collapsed;
+                passwordcheck.Visibility= Visibility.Collapsed;
+                DateOfBirth.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                user.Visibility = Visibility.Visible;
+                pass.Visibility = Visibility.Visible;
+                email.Visibility = Visibility.Visible;
+                phone.Visibility = Visibility.Visible;
+                passwordcheck.Visibility = Visibility.Visible;
+                DateOfBirth.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }
