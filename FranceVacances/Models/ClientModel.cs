@@ -34,5 +34,6 @@ namespace FranceVacances.Models
             set;
         }
         public double ToPay { get; set; }
+
     }
 }
