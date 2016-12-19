@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace FranceVacances.Models
         {
 
         }
-        public User(string _name,string _password,DateTime _dateofbirth,string _email, int _phonenumber, Dictionary<int,double> _boughtOffers)
+        public User(string _name,string _password,DateTime _dateofbirth,string _email, string _phonenumber, ObservableCollection<RentalModel> _boughtOffers,double _topay)
         {
             Name = _name;
             Password = _password;
@@ -20,12 +21,18 @@ namespace FranceVacances.Models
             Email = _email;
             PhoneNumber = _phonenumber;
             BoughtOffers = _boughtOffers;
+            ToPay = _topay;
         }
         public string Name { get; set; }
         public string Password { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
-        public int PhoneNumber { get; set; }
-        public Dictionary<int, double> BoughtOffers { get; set; }
+        public string PhoneNumber { get; set; }
+        public ObservableCollection<RentalModel> BoughtOffers
+        {
+            get;
+            set;
+        }
+        public double ToPay { get; set; }
     }
 }

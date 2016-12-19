@@ -55,26 +55,15 @@ namespace FranceVacances.Views
 
                 gallery.Items.Add(tempimg);
             }
-//            gallery.Width = stack_flip.Width;
-//            gallery.Height = stack_flip.Height;
-
-            
-//            gallery.SelectionChanged += FlipView_SelectionChanged;
- //           img.UriSource = new Uri(clickedRental.ImagePath);
- //           Image.Source = img;
-
-
             Price.Text = clickedRental.Price.ToString() + "$";
             Street.Text = clickedRental.Address[0];
             Description.Text = clickedRental.Description;
-
         }
 
         private void FlipView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {          
             Frame.Navigate(typeof(Book),rentalObject);

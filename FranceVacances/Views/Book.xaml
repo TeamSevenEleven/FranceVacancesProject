@@ -6,67 +6,96 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mv="using:FranceVacances.ModelView"
-    mc:Ignorable="d" Width="1425" Height="970">
+    mc:Ignorable="d" Width="1190" Height="820">
 
-    <Grid Background="Teal" Name="MainGrid" Margin="0,0,10,10">
+    <Grid Background="Teal" Name="MainGrid" Height="820" VerticalAlignment="Bottom">
+        <Grid Margin="35,130,25,210">
 
-        <CalendarView IsEnabled="True" Visibility="Visible" Margin="310,195,0,428"
-                  x:Name="Calendar"
-                  CalendarViewDayItemChanging="Calendar_CalendarViewDayItemChanging"
-                  SelectedDatesChanged="Calendar_SelectedDatesChanged" SelectionMode="Multiple" Height="337" Width="340"/>
-        <TextBlock x:Name="title"
-               HorizontalAlignment="Left"
-               TextWrapping="Wrap"
-               Text="TextBlock"
-               VerticalAlignment="Top"
-               Margin="265,0,0,0"
-               Width="655"
-               Height="80"
-                   TextAlignment="Center"
-               FontSize="64"
-               Foreground="#FFFFD68B"/>
-        <Button x:Name="checkout"
-            Click="checkout_Click"
-            Content="Checkout"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Margin="165,655,0,0"
-            Height="81"
-            Width="250"
-            FontSize="40"
-            Foreground="#FFFFD68B" />
+            <CalendarView IsEnabled="True" Visibility="Visible" Margin="275,7,0,131"
+                x:Name="Calendar"
+                CalendarViewDayItemChanging="Calendar_CalendarViewDayItemChanging"
+                SelectedDatesChanged="Calendar_SelectedDatesChanged" SelectionMode="Multiple" Height="342" Width="375"/>
+            <TextBlock x:Name="title"
+                HorizontalAlignment="Left"
+                TextWrapping="Wrap"
+                Text="TextBlock"
+                VerticalAlignment="Top"
+                Margin="700,-58,0,0"
+                Width="420"
+                Height="80"
+                TextAlignment="Center"
+                FontSize="50"
+                Foreground="#FFFFD68B"/>
+            <Button x:Name="checkout"
+                Click="checkout_Click"
+                Content="Checkout"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="0,381,0,0"
+                Height="81"
+                Width="255"
+                FontSize="20"
+                Foreground="#FFFFD68B" />
 
-        <ToggleSwitch x:Name="toggleSwitch" Header="Do you have an account?"  HorizontalAlignment="Left" Margin="78,195,0,0" VerticalAlignment="Top" OffContent="No" OnContent="Yes" Toggled="toggleSwitch_Toggled"/>
-        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="30,276,0,0" TextWrapping="Wrap" Text="Username" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Margin="30,320,0,0" TextWrapping="Wrap" Text="Password" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="30,455,0,0" TextWrapping="Wrap" Text="E-Mail" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889"/>
-        <TextBox x:Name="phone" HorizontalAlignment="Left" Margin="30,410,0,0" TextWrapping="Wrap" Text="Phone Number" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889"/>
-        <TextBox x:Name="passwordcheck" HorizontalAlignment="Left" Margin="30,365,0,0" TextWrapping="Wrap" Text="Password Again" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889"/>
-        <CalendarDatePicker HorizontalAlignment="Left" Margin="30,500,0,0" PlaceholderText="Select your birthday" VerticalAlignment="Top" Name="DateOfBirth" DisplayMode="Year" Height="33" Width="255"/>
+            <ToggleSwitch x:Name="toggleSwitch" Header="Do you have an account?"  HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" OffContent="No" OnContent="Yes" Toggled="toggleSwitch_Toggled"/>
+            <Grid Name="RegisterView" Margin="0,60,875,99">
+                <Grid Name="registerFields" Margin="0,0,0,13" Visibility="Visible">
+                    <TextBox x:Name="user" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889" GotFocus="clearText" LostFocus="restoreDefaultText"/>
+                    <TextBox x:Name="pass" HorizontalAlignment="Left" Margin="0,55,0,0" TextWrapping="Wrap" Text="Password" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+                    <TextBox x:Name="email" HorizontalAlignment="Left" Margin="0,220,0,0" TextWrapping="Wrap" Text="E-Mail" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+                    <TextBox x:Name="phone" HorizontalAlignment="Left" Margin="0,165,0,0" TextWrapping="Wrap" Text="Phone Number" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+                    <TextBox x:Name="passwordcheck" HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" Text="Password Again" TextAlignment="Center" VerticalAlignment="Top" Height="35" Width="255" RenderTransformOrigin="0.5,0.889" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+                    <CalendarDatePicker HorizontalAlignment="Left" Margin="0,275,0,0" PlaceholderText="Select your birthday" VerticalAlignment="Top" x:Name="DateOfBirth" DisplayMode="Year" DateFormat="{}{day.integer}/{month.integer}/{year.full}" Height="33" Width="255"/>
 
-        <TextBlock x:Name="price"
-               FontSize="30"
-               Foreground="#FFFFD68B"
-               HorizontalAlignment="Left"
-               TextWrapping="Wrap"
-               Text="{Binding Price}"
-               VerticalAlignment="Top"
-               Margin="1035,635,0,0" />
-        <TextBlock x:Name="total"
-               HorizontalAlignment="Left"
-               TextWrapping="Wrap"
-               Text="Total price: 0$"
-               VerticalAlignment="Top"
-               Margin="350,537,0,0"
-               FontSize="45"
-               Foreground="#FFFFD68B" />
-        <Button x:Name="clearbutton"
-            Content="Clear"
-            Background="White"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Margin="475,202,0,0"
-            Click="clearbutton_Click" Height="32" Width="60" />
+                </Grid>
+
+            </Grid>
+
+            <TextBlock x:Name="price"
+                FontSize="30"
+                Foreground="#FFFFD68B"
+                HorizontalAlignment="Left"
+                TextWrapping="Wrap"
+                TextAlignment="Center"
+                Text="Price per day: 0$"
+                VerticalAlignment="Top"
+                Margin="700,389,0,0" Width="415" Height="47" />
+            <TextBlock x:Name="total"
+                HorizontalAlignment="Left"
+                TextWrapping="Wrap"
+                TextAlignment="Center"
+                Text="Total price: 0$"
+                VerticalAlignment="Top"
+                Margin="275,357,0,0"
+                FontSize="30"
+                Foreground="#FFFFD68B" RenderTransformOrigin="0.491,-0.2" Width="375" Height="47" />
+            <Button x:Name="clearbutton"
+                Content="Clear Selection"
+                Background="White"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="430,7,0,0"
+                Click="clearbutton_Click" Height="46" Width="120" />
+            <Image x:Name="image" HorizontalAlignment="Left" Height="341" Margin="700,27,0,0" VerticalAlignment="Top" Width="415"/>
+            <TextBlock x:Name="info"
+                HorizontalAlignment="Left"
+                TextWrapping="Wrap"
+                TextAlignment="Center"
+                Text=""
+                VerticalAlignment="Top"
+                Margin="275,415,0,0"
+                FontSize="20"
+                Foreground="#FFFFD68B" RenderTransformOrigin="0.491,-0.2" Width="375" Height="47" />
+
+
+        </Grid>
+        <Grid Name="loginView" Margin="35,290,900,440" Visibility="Collapsed">
+            <TextBox x:Name="l_username" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center" Text="Username" VerticalAlignment="Top" Width="255" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+            <TextBox x:Name="l_password" HorizontalAlignment="Left" Margin="0,50,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="255" LostFocus="restoreDefaultText" GotFocus="clearText"/>
+           
+
+
+        </Grid>
 
 
     </Grid>

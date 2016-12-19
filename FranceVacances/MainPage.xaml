@@ -371,7 +371,7 @@
            x:Name="EmbeddedFrame"
            x:FieldModifier="public"
            PointerPressed="EmbeddedFrame_PointerPressed"
-           CacheSize="5">
+           CacheSize="5" Background="Teal">
     </Frame>
   </Grid>
 </Page>

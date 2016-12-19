@@ -30,10 +30,6 @@ namespace FranceVacances
         {
             this.InitializeComponent();
             Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().SetDesiredBoundsMode(ApplicationViewBoundsMode.UseCoreWindow); //content under appbar
-
-            
-
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

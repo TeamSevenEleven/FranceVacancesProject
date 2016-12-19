@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="Rentals" />
+    <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Rooms" />
     <RootPropertyPathName Name="Season" />
@@ -71,6 +71,7 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -98,6 +99,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Style" />
       <RootProperty Name="Padding" />
     </RootType>
@@ -170,6 +172,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Source" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetLeft" />
@@ -187,6 +190,7 @@
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="CacheSize" />
+      <RootProperty Name="Background" />
       <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
@@ -214,6 +218,19 @@
       <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="FranceVacances.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="LostFocus" />
+      <RootEvent Name="GotFocus" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarView">
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
@@ -233,28 +250,16 @@
       <RootProperty Name="OnContent" />
       <RootEvent Name="Toggled" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="RenderTransformOrigin" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
-      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="DisplayMode" />
+      <RootProperty Name="DateFormat" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="FranceVacances.Views.Book" />
     <RootType FullName="FranceVacances.ModelView.ModelView" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
@@ -265,6 +270,7 @@
       <RootProperty Name="GroupStyle" />
       <RootEvent Name="ItemClick" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
