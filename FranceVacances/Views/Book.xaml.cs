@@ -126,7 +126,7 @@ namespace FranceVacances.Views
 
         public void Login(string _username,string _password)
         {
-            int id;
+  
             User temp;
             foreach (var user in Users)
                 if ((user.Name == _username) && (user.Password == _password))
