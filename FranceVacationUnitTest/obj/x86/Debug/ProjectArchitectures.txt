@@ -1,0 +1,2 @@
+C:\Users\Ejer\Downloads\Programming\FranceVacancesProject\FranceVacances\FranceVacances.csproj;x86
+C:\Users\Ejer\Downloads\Programming\FranceVacancesProject\FranceVacationUnitTest\FranceVacationUnitTest.csproj;x86
