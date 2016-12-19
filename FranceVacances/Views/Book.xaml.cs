@@ -143,6 +143,10 @@ namespace FranceVacances.Views
                     info.Text = "Purchase succesfull.";
                     SaveUsers userhelper = new SaveUsers();
                     userhelper.SerializeUsers(Users);
+                    l_password.Visibility = Visibility.Collapsed;
+                    l_username.Visibility = Visibility.Collapsed;
+                    checkout.Visibility = Visibility.Collapsed;
+                    toggleSwitch.Visibility = Visibility.Collapsed;
                     break;
                 }
                 else
@@ -207,9 +211,6 @@ namespace FranceVacances.Views
 
         private void checkout_Click(object sender, RoutedEventArgs e)
         {
-            BookingModel bookedOffer;
-            bookedOffer = new BookingModel();
-            bookedOffer.Id = SentRental.id;
 
             if(toggleSwitch.IsOn)
             {

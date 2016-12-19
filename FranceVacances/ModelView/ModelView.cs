@@ -13,7 +13,7 @@ using System.IO;
 namespace FranceVacances.ModelView
 {
     
-    class ModelView 
+    public sealed class ModelView 
     {
         private static ObservableCollection<RentalModel> _rentals = new ObservableCollection<RentalModel>();
         public static ObservableCollection<RentalModel> Rentals
@@ -128,7 +128,7 @@ namespace FranceVacances.ModelView
                 {11, new List<int>() },
                 {12, new List<int>() },
 
-            }, "Summer", 3, "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. ", null, new List<string>() { "/Images/image1.jpg" }, null));
+            }, "Summer", 3, "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. ", null, new List<string>() { "https://theluxurytravelexpert.files.wordpress.com/2015/11/rayavadee-krabi.jpg" }, null));
             Rentals.Add(new RentalModel(5,"Hotel 5", "Spain", 15230.32f, 32, address, new Dictionary<int, List<int>>
             {
                 {1, new List<int>() },

@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 namespace FranceVacances.Persistency
 {
 
-    class SaveRentals
+    public sealed class SaveRentals
     {
 
         public async Task<int> SerializeRentals(ObservableCollection<RentalModel> instance)
@@ -37,7 +37,7 @@ namespace FranceVacances.Persistency
         }
 
     }
-    class SaveUsers
+    public sealed class SaveUsers
     {
         public async Task<int> SerializeUsers(ObservableCollection<User> instance)
         {
